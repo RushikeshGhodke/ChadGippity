@@ -5,8 +5,7 @@
 }
 
 header {
-    background-color: #333;
-    color: white;
+    color: #000000;
     padding: 20px 0;
 }
 
@@ -17,13 +16,16 @@ header {
     padding: 0 20px; /* Add padding to navbar */
 }
 
+
+
 .company-name {
     font-family: "Poppins", sans-serif;
     font-weight: bold;
     margin-left: 20px; /* Add margin-left to title */
+    font-size: 24px;
 }
 
-.nav-links {
+.nav-links ul {
     display: flex;
     list-style-type: none;
     margin: 0;
@@ -32,6 +34,8 @@ header {
 
 .nav-links li {
     margin-left: 10px;
+    transition: transform 0.3s ease-in-out; /* Add transition for scaling */
+    transform: scale(1); /* Set initial scale */
 }
 
 .nav-links li:first-child {
@@ -40,11 +44,101 @@ header {
 
 .nav-links a {
     font-family: "Poppins", sans-serif;
-    color: white;
     text-decoration: none;
+    font-weight: 500;
+    color: #000000;
     padding: 10px 20px;
 }
 
-.nav-links a:hover {
-    background-color: #555;
+/* Define animation */
+@keyframes scaleHover {
+    0% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(1.2);
+    }
+}
+
+.nav-links li:hover {
+    animation: scaleHover 0.3s ease-in-out forwards; 
+}
+
+
+
+.book-now-button {
+    font-family: "Poppins", sans-serif;
+    font-size: 13px;
+    color: #ffffff;
+    background-color: #000000;
+    border-radius: 17px;
+    border: none;
+    padding: 8px 20px;
+    cursor: pointer;
+    border-radius: 24px;
+    width: 120px;
+    height: 40px;
+    font-weight: 500;
+}
+
+.book-now-button:hover {
+    background-color: #DCD5DC; 
+    color: #1A385A; 
+    
+}
+
+.pink-offer {
+    width: 100%;
+    font-family: "Poppins", sans-serif;
+    font-size: 15px;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f113cc;
+    padding: 15px;
+}
+
+
+.hero {
+    background-color: beige;
+    height: 80vh;
+}
+
+.small-element {
+    background-color: #2f2ff8;
+    color: white;
+    height: 125px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.small-element h2 {
+    font-family: "Poppins", sans-serif;
+    font-size: 25px;
+    font-weight: 600;
+    width: 40%;
+}
+
+.imgs {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+}
+
+
+.small-element img {
+    width: 75px;
+    border-radius: 75px;
+    margin-right: 10px;
+}
+
+.imgs p {
+    font-family: "Poppins", sans-serif;
+    font-size: 17px;
+    font-weight: 400;
+    width: 30%;
 }
