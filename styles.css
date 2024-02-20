@@ -106,7 +106,7 @@ header {
 }
 
 .small-element {
-    background-color: #2f2ff8;
+    background-color: #655CFE;
     color: white;
     height: 125px;
     display: flex;
@@ -120,6 +120,7 @@ header {
     font-size: 25px;
     font-weight: 600;
     width: 40%;
+    margin-left: 75px;
 }
 
 .imgs {
@@ -141,4 +142,73 @@ header {
     font-size: 17px;
     font-weight: 400;
     width: 30%;
+}
+
+.trusted-text {
+    margin: 100px 0 50px 0;
+    text-align: center;
+    font-size: 16px;
+    font-family: "Poppins", sans-serif;
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+}
+
+.company-logos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    padding: 0 20px 0 20px;
+}
+
+.company-logos img {
+    width: 1200px;
+    margin: 0 20px 0 20px;
+}
+
+
+.explore-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.explore-item {
+    display: flex;
+    align-items: center;
+    width: 30%;
+}
+
+.explore-content {
+    text-align: left;
+    padding: 20px;
+}
+
+.explore-content h1 {
+    margin-bottom: 10px;
+}
+
+.explore-content p {
+    margin-bottom: 20px;
+}
+
+button {
+    background-color: #655CFE;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #769ABE;
+}
+
+.explore-item img {
+    max-width: 100%;
+    height: auto;
+    margin: 0 20px;
 }
